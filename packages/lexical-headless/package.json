@@ -9,29 +9,29 @@
   ],
   "license": "MIT",
   "version": "0.29.0",
-  "main": "LexicalHeadless.js",
-  "types": "index.d.ts",
+  "main": "./dist/LexicalHeadless.js",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/facebook/lexical",
     "directory": "packages/lexical-headless"
   },
-  "module": "LexicalHeadless.mjs",
+  "module": "./dist/LexicalHeadless.mjs",
   "sideEffects": false,
   "exports": {
     ".": {
       "import": {
-        "types": "./index.d.ts",
-        "development": "./LexicalHeadless.dev.mjs",
-        "production": "./LexicalHeadless.prod.mjs",
-        "node": "./LexicalHeadless.node.mjs",
-        "default": "./LexicalHeadless.mjs"
+        "types": "./dist/index.d.ts",
+        "development": "./dist/LexicalHeadless.dev.mjs",
+        "production": "./dist/LexicalHeadless.prod.mjs",
+        "node": "./dist/LexicalHeadless.node.mjs",
+        "default": "./dist/LexicalHeadless.mjs"
       },
       "require": {
-        "types": "./index.d.ts",
-        "development": "./LexicalHeadless.dev.js",
-        "production": "./LexicalHeadless.prod.js",
-        "default": "./LexicalHeadless.js"
+        "types": "./dist/index.d.ts",
+        "development": "./dist/LexicalHeadless.dev.js",
+        "production": "./dist/LexicalHeadless.prod.js",
+        "default": "./dist/LexicalHeadless.js"
       }
     }
   },

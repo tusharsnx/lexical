@@ -11,29 +11,29 @@
   ],
   "license": "MIT",
   "version": "0.29.0",
-  "main": "LexicalFile.js",
-  "types": "index.d.ts",
+  "main": "./dist/LexicalFile.js",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/facebook/lexical",
     "directory": "packages/lexical-file"
   },
-  "module": "LexicalFile.mjs",
+  "module": "./dist/LexicalFile.mjs",
   "sideEffects": false,
   "exports": {
     ".": {
       "import": {
-        "types": "./index.d.ts",
-        "development": "./LexicalFile.dev.mjs",
-        "production": "./LexicalFile.prod.mjs",
-        "node": "./LexicalFile.node.mjs",
-        "default": "./LexicalFile.mjs"
+        "types": "./dist/index.d.ts",
+        "development": "./dist/LexicalFile.dev.mjs",
+        "production": "./dist/LexicalFile.prod.mjs",
+        "node": "./dist/LexicalFile.node.mjs",
+        "default": "./dist/LexicalFile.mjs"
       },
       "require": {
-        "types": "./index.d.ts",
-        "development": "./LexicalFile.dev.js",
-        "production": "./LexicalFile.prod.js",
-        "default": "./LexicalFile.js"
+        "types": "./dist/index.d.ts",
+        "development": "./dist/LexicalFile.dev.js",
+        "production": "./dist/LexicalFile.prod.js",
+        "default": "./dist/LexicalFile.js"
       }
     }
   },

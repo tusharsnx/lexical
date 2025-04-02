@@ -9,8 +9,8 @@
   ],
   "license": "MIT",
   "version": "0.29.0",
-  "main": "LexicalMarkdown.js",
-  "types": "index.d.ts",
+  "main": "./dist/LexicalMarkdown.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "@lexical/code": "0.29.0",
     "@lexical/link": "0.29.0",
@@ -25,22 +25,22 @@
     "url": "https://github.com/facebook/lexical",
     "directory": "packages/lexical-markdown"
   },
-  "module": "LexicalMarkdown.mjs",
+  "module": "./dist/LexicalMarkdown.mjs",
   "sideEffects": false,
   "exports": {
     ".": {
       "import": {
-        "types": "./index.d.ts",
-        "development": "./LexicalMarkdown.dev.mjs",
-        "production": "./LexicalMarkdown.prod.mjs",
-        "node": "./LexicalMarkdown.node.mjs",
-        "default": "./LexicalMarkdown.mjs"
+        "types": "./dist/index.d.ts",
+        "development": "./dist/LexicalMarkdown.dev.mjs",
+        "production": "./dist/LexicalMarkdown.prod.mjs",
+        "node": "./dist/LexicalMarkdown.node.mjs",
+        "default": "./dist/LexicalMarkdown.mjs"
       },
       "require": {
-        "types": "./index.d.ts",
-        "development": "./LexicalMarkdown.dev.js",
-        "production": "./LexicalMarkdown.prod.js",
-        "default": "./LexicalMarkdown.js"
+        "types": "./dist/index.d.ts",
+        "development": "./dist/LexicalMarkdown.dev.js",
+        "production": "./dist/LexicalMarkdown.prod.js",
+        "default": "./dist/LexicalMarkdown.js"
       }
     }
   }

@@ -9,8 +9,8 @@
   ],
   "license": "MIT",
   "version": "0.29.0",
-  "main": "LexicalCode.js",
-  "types": "index.d.ts",
+  "main": "./dist/LexicalCode.js",
+  "types": "./dist/index.d.ts",
   "dependencies": {
     "@lexical/utils": "0.29.0",
     "lexical": "0.29.0",
@@ -24,22 +24,22 @@
   "devDependencies": {
     "@types/prismjs": "^1.26.0"
   },
-  "module": "LexicalCode.mjs",
+  "module": "./dist/LexicalCode.mjs",
   "sideEffects": true,
   "exports": {
     ".": {
       "import": {
-        "types": "./index.d.ts",
-        "development": "./LexicalCode.dev.mjs",
-        "production": "./LexicalCode.prod.mjs",
-        "node": "./LexicalCode.node.mjs",
-        "default": "./LexicalCode.mjs"
+        "types": "./dist/index.d.ts",
+        "development": "./dist/LexicalCode.dev.mjs",
+        "production": "./dist/LexicalCode.prod.mjs",
+        "node": "./dist/LexicalCode.node.mjs",
+        "default": "./dist/LexicalCode.mjs"
       },
       "require": {
-        "types": "./index.d.ts",
-        "development": "./LexicalCode.dev.js",
-        "production": "./LexicalCode.prod.js",
-        "default": "./LexicalCode.js"
+        "types": "./dist/index.d.ts",
+        "development": "./dist/LexicalCode.dev.js",
+        "production": "./dist/LexicalCode.prod.js",
+        "default": "./dist/LexicalCode.js"
       }
     }
   }
