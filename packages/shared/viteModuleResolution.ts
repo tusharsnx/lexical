@@ -51,7 +51,7 @@ const distModuleResolution = (environment: 'development' | 'production') => {
         .map((entry: NpmModuleExportEntry) => {
           const [name, moduleExports] = entry;
           const replacements = ([environment, 'default'] as const).map(
-            (condition) => pkg.resolve('dist', moduleExports.import[condition]),
+            (condition) => pkg.resolve(moduleExports.import[condition]),
           );
           const replacement = replacements.find(fs.existsSync.bind(fs));
           if (!replacement) {
